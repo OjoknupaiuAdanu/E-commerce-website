@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    overflow: hidden;
+}
+html,
+body{
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.checkout{
+    margin: 90px auto 20px;
+    width: 460px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 45px 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+.checkout h2{
+    font-size: 5rem;
+}
+.checkout h3{
+    font-size: 3rem;
+}
+.checkout h4{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.checkout p{
+    font-size: 1.5rem;
+}
+.zenith span, .opay span, .fbnig span{
+    font-weight: bold;
+    color: var(--pink);
+}
+.prove{
+    display: flex;
+    gap: 1rem;
+}
+.prove a img{
+    width: 3rem;
+}
+
+@media (max-width:750px) {
+    *{
+        overflow: hidden;
+        border: none;
+    }
+    .checkout{
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) {
+    *{
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .checkout{
+        width: 100%;
+    }
+}
